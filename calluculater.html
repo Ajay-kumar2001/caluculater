@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="cal.css">
+    
+</head>
+<body>
+    <div class="body">
+    <div class="grid-container">
+        <div class="display " id="disp"></div>
+
+        <button class="item oparate"   onclick="back(value)"   value="C" >C</button>
+        <button class="item oparate" onclick="oparation(value)"  value="%">%</button>
+        <button class="item oparate "   onclick="backOnePosition()">x</button>
+        <button class="item oparate" onclick="oparation(value)" value="/">/</button>
+
+        <button class="item " onclick="number7(value)" value="7" id="ID7">7</button>
+        <button class="item"  onclick="number8(value)" value="8" id="ID8">8</button>
+        <button class="item"  onclick="number9(value)" value="9" id="ID9">9</button>
+
+        <button class="item oparate" onclick="oparation(value)" value="+">+</button>
+
+        <button class="item" onclick="number4(value)" value="4" id="ID4">4</button>
+        <button class="item" onclick="number5(value)" value="5" id="ID5">5</button>
+        <button class="item" onclick="number6(value)" value="6" id="ID6">6</button>
+
+        <button class="item oparate" onclick="oparation(value)" value="-">-</button>
+        <button class="item" onclick="number1(value)" value="1" id="ID1">1</button>
+        <button class="item"onclick="number2(value)" value="2" id="Id2">2</button>
+        <button class="item" onclick="number3(value)" value="3" id="ID3">3</button>
+
+        <button class="item oparate" onclick="oparation(value)" value="*">*</button>
+
+        <button class="item" onclick="number00(value)" value="00">00</button>
+        <button class="item" onclick="number0(value)" value="0">0</button>
+        <button class="item " onclick="point(value)" value="." >.</button>
+
+        <button class="item oparate equal" onclick="oparation(value)" value="=">=</button>
+
+
+    </div>
+    </div>
+
+
+
+    <script>
+        var s=""
+        //7
+        function number7(value){
+             var d=parseInt(document.getElementById("ID7").value)
+           
+            s=s+d
+            console.log(s)
+         document.getElementById("disp").innerHTML=""+s
+        }
+        //8
+        function number8(value){
+             var d=parseInt(document.getElementById("ID8").value)
+            
+            s=s+d
+         console.log("s")
+         document.getElementById("disp").innerHTML=s
+        }
+        //9
+        function number9(value){
+             var d=parseInt(document.getElementById("ID9").value)
+            
+            s=s+d
+         console.log("s")
+         document.getElementById("disp").innerHTML=s
+        }
+        //6
+        function number6(value){
+             var d=parseInt(document.getElementById("ID6").value)
+            
+            s=s+d
+         console.log("s")
+         document.getElementById("disp").innerHTML=s
+        }
+        //5
+        function number5(value){
+             var d=parseInt(document.getElementById("ID5").value)
+            
+            s=s+d
+         console.log("s")
+         document.getElementById("disp").innerHTML=s
+        }
+        //4
+        function number6(value){
+             var d=parseInt(document.getElementById("ID6").value)
+            
+            s=s+d
+         console.log("s")
+         document.getElementById("disp").innerHTML=s
+        }
+        //3
+        function number3(value){
+             var d=parseInt(document.getElementById("ID3").value)
+            
+            s=s+d
+         console.log("s")
+         document.getElementById("disp").innerHTML=s
+        }
+        //2
+        function number2(value){
+             var d=parseInt(document.getElementById("ID2").value)
+            
+            s=s+d
+         console.log("s")
+         document.getElementById("disp").innerHTML=s
+        }
+
+         function oparation(value){
+            switch(value){
+                case "C":
+                document.getElementById("disp").innerHTML=""
+                         break
+                case "%":
+                       break         
+                case "x":
+                       break         
+                case "/":
+                       break         
+                case "+":
+                       break 
+                case "-":
+                       break         
+                case "*":
+                     break         
+                case "=":
+                       break         
+               
+
+            }
+         }
+    </script>
+
+    
+</body>
+</html>
